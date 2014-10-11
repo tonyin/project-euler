@@ -3,4 +3,4 @@ projecteuler
 
 Author: Tony Yin
 
-Everything written in R.
+Project Euler implemented in R.
