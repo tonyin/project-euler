@@ -2,4 +2,14 @@
 # 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-sum(seq(0, 999, 3)) + sum(seq(0, 999, 5)) - sum(seq(0, 999, 15))
+LIMIT = 1000
+
+p1 = function(x) {
+  return(
+    sum(seq(0, x-1, 3)) + sum(seq(0, x-1, 5)) - sum(seq(0, x-1, 15))
+  )
+}
+
+t = proc.time()
+p1(LIMIT)
+proc.time() - t

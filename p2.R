@@ -5,17 +5,24 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 LIMIT = 4000000
-prev = 1
-curr = 2
-total = 0
 
-while (curr < LIMIT) {
-  if (curr %% 2 == 0) {
-    total = total + curr
+p2 = function(x) {
+  prev = 1
+  curr = 2
+  total = 0
+  
+  while (curr < LIMIT) {
+    if (curr %% 2 == 0) {
+      total = total + curr
+    }
+    tmp = prev + curr
+    prev = curr
+    curr = tmp
   }
-  tmp = prev + curr
-  prev = curr
-  curr = tmp
+
+  return(total)
 }
 
-total
+t = proc.time()
+p2(LIMIT)
+proc.time() - t
