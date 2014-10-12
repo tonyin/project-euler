@@ -24,12 +24,12 @@ check_palindrome = function(x) {
 }
 
 p4 = function(x) {
-  n_max = 10^x
+  n_max = 10^x-1
   answer = 0
   
-  for (i in 1:n_max) {
-    for (j in 1:i) {
-      n_prod = (n_max-i) * (n_max-j)
+  for (i in seq(0, n_max, 11)) {
+    for (j in 0:i) {
+      n_prod = i * (n_max - j)
       if (check_palindrome(n_prod)) {
         if (n_prod > answer) {
           answer = n_prod
