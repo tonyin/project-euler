@@ -26,8 +26,10 @@ check_palindrome = function(x) {
 p4 = function(x) {
   n_max = 10^x-1
   answer = 0
+  sieve = 0
+  if (x == 3) { sieve = 11 }
   
-  for (i in seq(0, n_max, 11)) {
+  for (i in seq(0, n_max, sieve)) {
     for (j in 0:i) {
       n_prod = i * (n_max - j)
       if (check_palindrome(n_prod)) {
