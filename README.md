@@ -3,7 +3,7 @@ projecteuler
 
 Author: Tony Yin
 
-Project Euler solutions implemented in R. Each problem/solution resides in its own file and contains the problem prompt, optional input for a more generalized problem (eg. use a different number), and program running time info.
+[Project Euler](https://projecteuler.net/) solutions implemented in R. Each problem/solution resides in its own file and contains the problem prompt, optional input for a more generalized problem (eg. use a different number), and program running time info.
 
 ---
 
