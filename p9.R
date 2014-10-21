@@ -14,12 +14,8 @@ p9 = function (x) {
   for (a in seq(1, a_limit)) {
     b_limit = floor((SUM - a) / 2)
     for (b in seq(a + 1, b_limit)) {
-      c_limit = SUM - a - b
-      for (c in seq(b + 1, c_limit)) {
-        if (a^2 + b^2 != c^2) { next }
-        if (a + b + c != 1000) { next }
-        return (a * b * c)
-      }
+      if (a^2 + b^2 != (1000 - a - b)^2) { next }
+      return (a * b * (1000 - a - b))
     }
   }
 }

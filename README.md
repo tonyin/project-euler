@@ -9,5 +9,5 @@ Author: Tony Yin
 
 ### Things still need to implement:
 
-* p7 - track previous primes for testing primeness; sieve of erastothenes
+* p7 - sieve of erastothenes
 * p9 - euclid's formula
