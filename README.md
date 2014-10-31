@@ -11,3 +11,4 @@ Author: Tony Yin
 
 * p7 - sieve of erastothenes
 * p9 - euclid's formula
+* p14 - 183s. need a heuristic
