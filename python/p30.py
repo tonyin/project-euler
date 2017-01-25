@@ -26,6 +26,6 @@ def main():
     # print(sum([i for i in range(2, 10**upper_bound()-1) if i == sum([int(d)**5 for d in str(i)])])) # one-liner
 
 if __name__ == '__main__':
-	start = time.time()
-	main()
-	print('Program runtime: {0:.3f}s'.format(time.time() - start))
+    start = time.time()
+    main()
+    print('Program runtime: {0:.3f}s'.format(time.time() - start))
