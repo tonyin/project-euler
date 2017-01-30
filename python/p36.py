@@ -6,7 +6,7 @@ import time
 # Problem:
 # Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2.
 
-def is_palindrone(n):
+def is_palindrome(n):
     if n < 1: return False
     elif n < 10: return True
     elif len(str(n)) % 2 == 0:
@@ -33,7 +33,7 @@ def base_10to2(n):
 
 def main():
     ub = 1000000 # upper bound
-    print(sum([i for i in range(ub) if is_palindrone(i) and is_palindrone(base_10to2(i))]))
+    print(sum([i for i in range(ub) if is_palindrome(i) and is_palindrome(base_10to2(i))]))
 
 if __name__ == '__main__':
     start = time.time()
