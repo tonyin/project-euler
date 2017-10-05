@@ -7,6 +7,10 @@ Author: Tony Yin
 
 ## Notes
 
+### Data
+
+* Downloaded directly from site and stored in `data/`
+
 ### Python
 
 * p29 - Switched to python3 and virtualenvwrapper setup
@@ -18,3 +22,4 @@ Author: Tony Yin
 * p7 - sieve of erastothenes
 * p9 - euclid's formula
 * p14 - 183s. need a heuristic
+* p39 - 39s last run
