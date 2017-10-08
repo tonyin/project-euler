@@ -19,7 +19,8 @@ Author: Tony Yin
 
 ## To Dos: 
 
-* p7 - sieve of erastothenes
+* p7 - sieve of eratosthenes
 * p9 - euclid's formula
 * p14 - 183s. need a heuristic
-* p39 - 39s last run
+* p39 - 39s
+* p43 - 34s
